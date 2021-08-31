@@ -1,3 +1,111 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "gringolino@mail.com",
+      "password": "$2a$10$pRMJacT1mDQeh5kuxiqxwOUEszD2kq64iuxPoRklg9LiKmXtbg0x2",
+      "name": "Gringolino",
+      "age": 52,
+      "id": 1
+    },
+    {
+      "email": "filipe@mail.com",
+      "password": "$2a$10$YSbZCB1wRveSb/fYNyXGZOnnjATQeKHjJ7QqssrA61DOzOJ2Ofz2u",
+      "name": "Filipe Gutierry",
+      "age": 27,
+      "id": 1
+    },
+    {
+      "email": "mario@mail.com",
+      "password": "$2a$10$2jyHgJHDKXJDiLVRaxWnV.Xv2Hu7Eg9p1S5LBeTw5mD5zkwiiCe0i",
+      "name": "Mario Bros",
+      "age": 45,
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "Geladeira",
+      "userId": 1,
+      "price": 1500,
+      "category": "A",
+      "id": 2
+    },
+    {
+      "name": "Aberoba",
+      "userId": 2,
+      "price": 6,
+      "category": "A",
+      "id": 4
+    },
+    {
+      "price": 820,
+      "userId": 1,
+      "name": "Pleisteicho",
+      "category": "C",
+      "id": 5,
+      "color": "gray"
+    },
+    {
+      "name": "Televisão",
+      "userId": 2,
+      "price": 400,
+      "category": "D",
+      "id": 4
+    },
+    {
+      "name": "DVD",
+      "userId": 2,
+      "price": 850,
+      "category": "D",
+      "id": 5
+    },
+    {
+      "name": "Sofa",
+      "userId": 2,
+      "price": 850,
+      "category": "C",
+      "id": 6
+    },
+    {
+      "name": "Celular",
+      "userId": 2,
+      "price": 900,
+      "category": "A",
+      "id": 10
+    },
+    {
+      "name": "Notebook",
+      "userId": 2,
+      "price": 2300,
+      "category": "A",
+      "id": 11
+    },
+    {
+      "name": "Impressora",
+      "userId": 2,
+      "price": 300,
+      "category": "A",
+      "id": 12
+    },
+    {
+      "name": "Impressora 3d",
+      "userId": 2,
+      "price": 300,
+      "category": "A",
+      "id": 13
+    },
+    {
+      "name": "PS4",
+      "userId": 1,
+      "price": 500,
+      "category": "A",
+      "id": 15
+    }
+  ],
+  "messages": [
+    {
+      "content": "Mensagem teste",
+      "userId": 1
+    }
+  ]
 }
