@@ -53,7 +53,7 @@ const generateData = () => {
       )}`,
       author: {
         name: faker.name.findName(),
-        imageUrl: faker.internet.avatar(),
+        avatarUrl: faker.internet.avatar(),
         job: faker.name.jobTitle(),
         company: faker.company.companyName(),
       },
