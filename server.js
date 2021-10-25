@@ -11,20 +11,6 @@ const rules = auth.rewriter({
   "/products*": "/640/products$1",
 });
 
-// const generateData = () => {
-//   let data = { users: [] };
-//   for (let i = 1; i <= 20; i++) {
-//     data.users.push({
-//       id: i,
-//       firstName: faker.name.firstName(),
-//       lastName: faker.name.lastName(),
-//       email: faker.internet.email(),
-//       avatarUrl: faker.image.avatar(),
-//     });
-//   }
-//   return data;
-// };
-
 const generateData = () => {
   let data = {
     posts: [],
@@ -46,7 +32,7 @@ const generateData = () => {
   for (let i = 1; i <= 200; i++) {
     data.posts.push({
       id: i,
-      title: faker.lorem.sentence(),
+      title: faker.lorem.words(),
       time: Math.floor(Math.random() * 6 + 1),
       imageUrl: `https://placeimg.com/640/480/tech?random=${Math.round(
         Math.random() * 1000
