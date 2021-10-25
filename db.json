@@ -15,11 +15,18 @@
       "id": 1
     },
     {
-      "email": "mario@mail.com",
+      "email": "elon@tesla.com",
       "password": "$2a$10$2jyHgJHDKXJDiLVRaxWnV.Xv2Hu7Eg9p1S5LBeTw5mD5zkwiiCe0i",
       "name": "Mario Bros",
       "age": 45,
       "id": 2
+    },
+    {
+      "email": "teste@mail.com",
+      "password": "$2a$10$IYdRHssmmnbIuqF2HcBdCuGacdx4./GRxSzhPvFHGeyDqXFA/oZQu",
+      "name": "Cabral",
+      "age": 42,
+      "id": 3
     }
   ],
   "products": [
