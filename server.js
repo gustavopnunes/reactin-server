@@ -11,7 +11,7 @@ const rules = auth.rewriter({
 
 const generateData = () => {
   let data = {
-    posts: [],
+    authors: [],
     users: [
       {
         id: 1,
@@ -28,19 +28,11 @@ const generateData = () => {
     ],
   };
   for (let i = 1; i <= 200; i++) {
-    data.posts.push({
-      id: i,
-      title: faker.lorem.sentence(),
-      time: Math.floor(Math.random() * 6 + 1),
-      imageUrl: `https://placeimg.com/640/480/tech?random=${Math.round(
-        Math.random() * 1000
-      )}`,
-      author: {
-        name: faker.name.findName(),
-        avatarUrl: faker.internet.avatar(),
-        job: faker.name.jobTitle(),
-        company: faker.company.companyName(),
-      },
+    data.authors.push({
+      name: faker.name.findName(),
+      avatarUrl: faker.internet.avatar(),
+      job: faker.name.jobTitle(),
+      company: faker.company.companyName(),
     });
   }
   return data;
