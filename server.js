@@ -11,7 +11,6 @@ const rules = auth.rewriter({
 
 const generateData = () => {
   let data = {
-    authors: [],
     users: [
       {
         id: 1,
@@ -27,15 +26,6 @@ const generateData = () => {
       },
     ],
   };
-  for (let i = 1; i <= 200; i++) {
-    data.authors.push({
-      id: i,
-      name: faker.name.findName(),
-      avatarUrl: faker.internet.avatar(),
-      job: faker.name.jobTitle(),
-      company: faker.company.companyName(),
-    });
-  }
   return data;
 };
 
