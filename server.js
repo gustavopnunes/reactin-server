@@ -29,6 +29,7 @@ const generateData = () => {
   };
   for (let i = 1; i <= 200; i++) {
     data.authors.push({
+      id: i,
       name: faker.name.findName(),
       avatarUrl: faker.internet.avatar(),
       job: faker.name.jobTitle(),
