@@ -1,14 +1,12 @@
 var cors = require("cors");
 const jsonServer = require("json-server");
 const auth = require("json-server-auth");
-const faker = require("faker");
+const faker = require("faker-br");
 const app = jsonServer.create();
 
-faker.locale = "pt_BR";
-
 const rules = auth.rewriter({
-  "/users*": "/666/users$1",
-  "/products*": "/640/products$1",
+  "/users*": "/600/users$1",
+  "/posts*": "/664/posts$1",
 });
 
 const generateData = () => {
@@ -32,7 +30,7 @@ const generateData = () => {
   for (let i = 1; i <= 200; i++) {
     data.posts.push({
       id: i,
-      title: faker.lorem.words(),
+      title: faker.lorem.sentence(),
       time: Math.floor(Math.random() * 6 + 1),
       imageUrl: `https://placeimg.com/640/480/tech?random=${Math.round(
         Math.random() * 1000
@@ -47,6 +45,8 @@ const generateData = () => {
   }
   return data;
 };
+
+console.log(generateData());
 
 const router = jsonServer.router(generateData());
 const port = process.env.PORT || 3001;
