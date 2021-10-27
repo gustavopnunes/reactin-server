@@ -5,7 +5,7 @@ const faker = require("faker-br");
 const app = jsonServer.create();
 
 const rules = auth.rewriter({
-  "/users*": "/600/users$1",
+  "/users*": "/664/users$1",
   "/posts*": "/664/posts$1",
 });
 
