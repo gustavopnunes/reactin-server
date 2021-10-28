@@ -1,7 +1,6 @@
 var cors = require("cors");
 const jsonServer = require("json-server");
 const auth = require("json-server-auth");
-const faker = require("faker-br");
 const app = jsonServer.create();
 
 const rules = auth.rewriter({
