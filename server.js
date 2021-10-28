@@ -4,7 +4,7 @@ const auth = require("json-server-auth");
 const app = jsonServer.create();
 
 const rules = auth.rewriter({
-  "/users*": "/666/users$1",
+  "/users*": "/664/users$1",
 });
 
 const generateData = () => {
