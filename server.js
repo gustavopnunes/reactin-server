@@ -5,8 +5,7 @@ const faker = require("faker-br");
 const app = jsonServer.create();
 
 const rules = auth.rewriter({
-  "/users*": "/664/users$1",
-  "/posts*": "/664/posts$1",
+  "/users*": "/640/users$1",
 });
 
 const generateData = () => {
@@ -28,8 +27,6 @@ const generateData = () => {
   };
   return data;
 };
-
-console.log(generateData());
 
 const router = jsonServer.router(generateData());
 const port = process.env.PORT || 3001;

@@ -5,7 +5,6 @@
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "faker-br": "^0.4.1",
     "json-server": "^0.16.1",
     "json-server-auth": "^2.0.2"
   }
